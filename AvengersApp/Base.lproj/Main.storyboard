@@ -27,7 +27,7 @@
         <!--Heroes-->
         <scene sceneID="Tca-We-LhM">
             <objects>
-                <viewController id="S3M-ZP-imB" sceneMemberID="viewController">
+                <viewController id="S3M-ZP-imB" customClass="HeroesViewController" customModule="AvengersApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d23-fY-Sjh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,6 +83,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Heroes" image="ic_tab_heroes" id="caZ-8i-l0b"/>
+                    <connections>
+                        <outlet property="tableView" destination="sZb-w4-qG6" id="TIG-lM-bRx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUQ-We-7X5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
