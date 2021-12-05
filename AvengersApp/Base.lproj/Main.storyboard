@@ -31,14 +31,62 @@
                     <view key="view" contentMode="scaleToFill" id="d23-fY-Sjh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sZb-w4-qG6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="204" id="BO7-OK-ShO" customClass="HeroTableViewCell" customModule="AvengersApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="204"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BO7-OK-ShO" id="kYm-fg-Osf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lMc-rd-AcL">
+                                                    <rect key="frame" x="24" y="8" width="366" height="188"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_heroe_america_captain" translatesAutoresizingMaskIntoConstraints="NO" id="r8x-ds-2fE">
+                                                            <rect key="frame" x="71.5" y="0.0" width="223" height="156"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitan America" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdf-E3-RVQ">
+                                                            <rect key="frame" x="120.5" y="164" width="125.5" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lMc-rd-AcL" firstAttribute="top" secondItem="kYm-fg-Osf" secondAttribute="top" constant="8" id="2ge-wq-Xz1"/>
+                                                <constraint firstAttribute="bottom" secondItem="lMc-rd-AcL" secondAttribute="bottom" constant="8" id="d19-Hj-1Tf"/>
+                                                <constraint firstAttribute="trailing" secondItem="lMc-rd-AcL" secondAttribute="trailing" constant="24" id="jcf-Wv-Xrg"/>
+                                                <constraint firstItem="lMc-rd-AcL" firstAttribute="leading" secondItem="kYm-fg-Osf" secondAttribute="leading" constant="24" id="nZ4-wq-28i"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="heroImage" destination="r8x-ds-2fE" id="rIY-i6-6kD"/>
+                                            <outlet property="heroName" destination="Rdf-E3-RVQ" id="rae-Fc-kOQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4YG-gK-m9F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4YG-gK-m9F" firstAttribute="trailing" secondItem="sZb-w4-qG6" secondAttribute="trailing" id="1zy-KL-ch3"/>
+                            <constraint firstItem="4YG-gK-m9F" firstAttribute="bottom" secondItem="sZb-w4-qG6" secondAttribute="bottom" id="7PL-0k-cLX"/>
+                            <constraint firstItem="sZb-w4-qG6" firstAttribute="leading" secondItem="4YG-gK-m9F" secondAttribute="leading" id="Er5-va-9B1"/>
+                            <constraint firstItem="sZb-w4-qG6" firstAttribute="top" secondItem="4YG-gK-m9F" secondAttribute="top" id="lMR-rB-VOX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Heroes" image="ic_tab_heroes" id="caZ-8i-l0b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUQ-We-7X5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-558" y="-350"/>
+            <point key="canvasLocation" x="-559.4202898550725" y="-350.22321428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NS6-3w-ecR">
@@ -62,6 +110,7 @@
     <resources>
         <image name="ic_tab_heroes" width="16" height="17"/>
         <image name="ic_tab_villain" width="11" height="17"/>
+        <image name="img_heroe_america_captain" width="223.33332824707031" height="138"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
