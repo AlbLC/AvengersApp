@@ -11,7 +11,6 @@
 		A987FC5E275D3B60006750A9 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987FC5D275D3B60006750A9 /* Hero.swift */; };
 		A9E2DED1275CEDDE002722D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E2DED0275CEDDE002722D5 /* AppDelegate.swift */; };
 		A9E2DED3275CEDDE002722D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E2DED2275CEDDE002722D5 /* SceneDelegate.swift */; };
-		A9E2DED5275CEDDE002722D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E2DED4275CEDDE002722D5 /* ViewController.swift */; };
 		A9E2DED8275CEDDE002722D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E2DED6275CEDDE002722D5 /* Main.storyboard */; };
 		A9E2DEDD275CEDDF002722D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E2DEDB275CEDDF002722D5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,7 +21,6 @@
 		A9E2DECD275CEDDE002722D5 /* AvengersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvengersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E2DED0275CEDDE002722D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E2DED2275CEDDE002722D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9E2DED4275CEDDE002722D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9E2DED7275CEDDE002722D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9E2DEDC275CEDDF002722D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9E2DEDE275CEDDF002722D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				A987FC5C275D3B3A006750A9 /* Models */,
 				A9E2DED0275CEDDE002722D5 /* AppDelegate.swift */,
 				A9E2DED2275CEDDE002722D5 /* SceneDelegate.swift */,
-				A9E2DED4275CEDDE002722D5 /* ViewController.swift */,
 				A9E2DED6275CEDDE002722D5 /* Main.storyboard */,
 				A9E2DEDB275CEDDF002722D5 /* LaunchScreen.storyboard */,
 				A987FC5A275D31C7006750A9 /* Assets.xcassets */,
@@ -149,7 +146,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9E2DED5275CEDDE002722D5 /* ViewController.swift in Sources */,
 				A9E2DED1275CEDDE002722D5 /* AppDelegate.swift in Sources */,
 				A9E2DED3275CEDDE002722D5 /* SceneDelegate.swift in Sources */,
 				A987FC5E275D3B60006750A9 /* Hero.swift in Sources */,
