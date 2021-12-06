@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Villains-->
+        <!--View Controller-->
         <scene sceneID="0tD-Kh-b2b">
             <objects>
                 <viewController id="rqv-e9-Ipi" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="ieQ-MN-Bbg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Villains" image="ic_tab_villain" id="06D-9f-YAw"/>
+                    <navigationItem key="navigationItem" id="g4k-D1-zUd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QT7-2d-EKy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-558" y="258"/>
+            <point key="canvasLocation" x="350.72463768115944" y="294.64285714285711"/>
         </scene>
-        <!--Heroes-->
+        <!--Heroes View Controller-->
         <scene sceneID="Tca-We-LhM">
             <objects>
                 <viewController id="S3M-ZP-imB" customClass="HeroesViewController" customModule="AvengersApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sZb-w4-qG6">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeroTableViewCell" rowHeight="204" id="BO7-OK-ShO" customClass="HeroTableViewCell" customModule="AvengersApp" customModuleProvider="target">
@@ -68,6 +68,7 @@
                                         <connections>
                                             <outlet property="heroImage" destination="r8x-ds-2fE" id="rIY-i6-6kD"/>
                                             <outlet property="heroName" destination="Rdf-E3-RVQ" id="rae-Fc-kOQ"/>
+                                            <segue destination="UPK-JX-g6c" kind="show" id="f5z-G9-Z5j"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -82,14 +83,63 @@
                             <constraint firstItem="sZb-w4-qG6" firstAttribute="top" secondItem="4YG-gK-m9F" secondAttribute="top" id="lMR-rB-VOX"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Heroes" image="ic_tab_heroes" id="caZ-8i-l0b"/>
+                    <navigationItem key="navigationItem" id="rBB-pa-B8F"/>
                     <connections>
                         <outlet property="tableView" destination="sZb-w4-qG6" id="TIG-lM-bRx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUQ-We-7X5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-559.4202898550725" y="-350.22321428571428"/>
+            <point key="canvasLocation" x="350.72463768115944" y="-350.22321428571428"/>
+        </scene>
+        <!--Description View Controller-->
+        <scene sceneID="Swp-7X-LLc">
+            <objects>
+                <viewController id="UPK-JX-g6c" customClass="DescriptionViewController" customModule="AvengersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V7D-0M-GJa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="RrM-JQ-gQY">
+                                <rect key="frame" x="16" y="112" width="382" height="217"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="esc-ep-CHR">
+                                        <rect key="frame" x="71" y="0.0" width="240" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U78-CO-1dW">
+                                        <rect key="frame" x="170.5" y="152" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xV3-cA-FdP">
+                                        <rect key="frame" x="170.5" y="196.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X6u-zH-tLk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X6u-zH-tLk" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RrM-JQ-gQY" secondAttribute="bottom" constant="24" id="5jm-Rb-Hix"/>
+                            <constraint firstItem="RrM-JQ-gQY" firstAttribute="leading" secondItem="X6u-zH-tLk" secondAttribute="leading" constant="16" id="FWJ-8r-l3r"/>
+                            <constraint firstItem="X6u-zH-tLk" firstAttribute="trailing" secondItem="RrM-JQ-gQY" secondAttribute="trailing" constant="16" id="hgr-Dt-TEb"/>
+                            <constraint firstItem="RrM-JQ-gQY" firstAttribute="top" secondItem="X6u-zH-tLk" secondAttribute="top" constant="24" id="y1D-zd-rDz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yCD-Kg-eau"/>
+                    <connections>
+                        <outlet property="caracterDescription" destination="xV3-cA-FdP" id="3fa-eB-o55"/>
+                        <outlet property="image" destination="esc-ep-CHR" id="GLR-Wa-R15"/>
+                        <outlet property="name" destination="U78-CO-1dW" id="P5D-gj-NSh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="goD-b9-mOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="-46"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NS6-3w-ecR">
@@ -101,13 +151,51 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="S3M-ZP-imB" kind="relationship" relationship="viewControllers" id="7Vr-3X-zVP"/>
-                        <segue destination="rqv-e9-Ipi" kind="relationship" relationship="viewControllers" id="xKB-ig-dKH"/>
+                        <segue destination="4nT-Tv-6jk" kind="relationship" relationship="viewControllers" id="7Vr-3X-zVP"/>
+                        <segue destination="q5P-qo-8iR" kind="relationship" relationship="viewControllers" id="xKB-ig-dKH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDS-F4-5Wy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1448" y="-46"/>
+        </scene>
+        <!--Heroes-->
+        <scene sceneID="0BU-vv-73l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4nT-Tv-6jk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Heroes" image="ic_tab_heroes" id="caZ-8i-l0b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="848-C6-4s1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S3M-ZP-imB" kind="relationship" relationship="rootViewController" id="DmK-r4-f4H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="InY-Oy-dxn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559.4202898550725" y="-350.22321428571428"/>
+        </scene>
+        <!--Villains-->
+        <scene sceneID="zc0-C3-p2n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q5P-qo-8iR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Villains" image="ic_tab_villain" id="06D-9f-YAw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x5q-as-HJN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rqv-e9-Ipi" kind="relationship" relationship="rootViewController" id="KIY-cC-ym1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hn2-II-6Ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559.4202898550725" y="294.64285714285711"/>
         </scene>
     </scenes>
     <resources>
