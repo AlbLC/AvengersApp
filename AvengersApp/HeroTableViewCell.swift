@@ -12,15 +12,19 @@ class HeroTableViewCell: UITableViewCell {
     @IBOutlet weak var heroImage: UIImageView!
     @IBOutlet weak var heroName: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        heroImage.image = nil
+        heroName.text = nil
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureView(image: String, name: String) {
+        heroImage.image = UIImage(named: image)
+        heroName.text = name
+        
     }
-
+    
+    
+    
 }
