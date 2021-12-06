@@ -24,4 +24,6 @@ class DescriptionViewController: UIViewController {
         caracterDescription.text = character?.description
     }
     
+    
+    
 }

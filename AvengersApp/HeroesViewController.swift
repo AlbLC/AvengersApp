@@ -15,7 +15,7 @@ class HeroesViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -33,14 +33,21 @@ class HeroesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let hero = heroes[indexPath.row]
         cell.configureView(image: hero.image,
-                          name: hero.name)
+                           name: hero.name)
         
         
         return cell
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
+        if let destination = segue.destination as? DescriptionViewController,
+           let cell = sender as? HeroTableViewCell,
+           let indexPath = tableView.indexPath(for: cell){
+            
+            let hero = heroes[indexPath.row]
+            destination.character = hero
+        }
+        
+        
     }
-    
-    
 }
