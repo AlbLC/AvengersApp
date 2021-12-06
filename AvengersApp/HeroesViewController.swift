@@ -11,7 +11,7 @@ class HeroesViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
-    var heroes = [Hero]()
+    var heroes = [Character]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

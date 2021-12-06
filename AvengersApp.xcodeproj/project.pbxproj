@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A987FC5B275D31C7006750A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A987FC5A275D31C7006750A9 /* Assets.xcassets */; };
-		A987FC5E275D3B60006750A9 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987FC5D275D3B60006750A9 /* Hero.swift */; };
+		A987FC5E275D3B60006750A9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987FC5D275D3B60006750A9 /* Character.swift */; };
 		A987FC61275D3FD9006750A9 /* HeroesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987FC60275D3FD9006750A9 /* HeroesRepository.swift */; };
 		A987FC63275D4626006750A9 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987FC62275D4626006750A9 /* HeroTableViewCell.swift */; };
 		A987FC65275D47D8006750A9 /* HeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987FC64275D47D8006750A9 /* HeroesViewController.swift */; };
@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		A987FC5A275D31C7006750A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A987FC5D275D3B60006750A9 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		A987FC5D275D3B60006750A9 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		A987FC60275D3FD9006750A9 /* HeroesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesRepository.swift; sourceTree = "<group>"; };
 		A987FC62275D4626006750A9 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
 		A987FC64275D47D8006750A9 /* HeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		A987FC5C275D3B3A006750A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A987FC5D275D3B60006750A9 /* Hero.swift */,
+				A987FC5D275D3B60006750A9 /* Character.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 				A987FC65275D47D8006750A9 /* HeroesViewController.swift in Sources */,
 				A9E2DED1275CEDDE002722D5 /* AppDelegate.swift in Sources */,
 				A9E2DED3275CEDDE002722D5 /* SceneDelegate.swift in Sources */,
-				A987FC5E275D3B60006750A9 /* Hero.swift in Sources */,
+				A987FC5E275D3B60006750A9 /* Character.swift in Sources */,
 				A987FC61275D3FD9006750A9 /* HeroesRepository.swift in Sources */,
 				A987FC63275D4626006750A9 /* HeroTableViewCell.swift in Sources */,
 			);
