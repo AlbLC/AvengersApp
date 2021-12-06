@@ -29,9 +29,12 @@ class HeroesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HeroTableViewCell", for: indexPath) as? HeroTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HeroTableViewCell", for: indexPath) as? HeroTableViewCell else { return UITableViewCell() }
         
-        return cell ?? UITableViewCell()
+        let hero = heroes[indexPath.row]
+        cell.heroName.text = hero.name
+        cell.heroImage.image = UIImage(named: hero.image)
+        
+        return cell
     }
-
 }
