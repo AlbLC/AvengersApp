@@ -14,6 +14,7 @@
 		A987FC65275D47D8006750A9 /* HeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987FC64275D47D8006750A9 /* HeroesViewController.swift */; };
 		A987FC67275E2431006750A9 /* VillainsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987FC66275E2431006750A9 /* VillainsRepository.swift */; };
 		A9B7CD79275E8E2100235FE1 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B7CD78275E8E2100235FE1 /* DescriptionViewController.swift */; };
+		A9B8317A275F6F8B00D17FD7 /* VillainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B83179275F6F8B00D17FD7 /* VillainTableViewCell.swift */; };
 		A9E2DED1275CEDDE002722D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E2DED0275CEDDE002722D5 /* AppDelegate.swift */; };
 		A9E2DED3275CEDDE002722D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E2DED2275CEDDE002722D5 /* SceneDelegate.swift */; };
 		A9E2DED8275CEDDE002722D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E2DED6275CEDDE002722D5 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		A987FC64275D47D8006750A9 /* HeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewController.swift; sourceTree = "<group>"; };
 		A987FC66275E2431006750A9 /* VillainsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainsRepository.swift; sourceTree = "<group>"; };
 		A9B7CD78275E8E2100235FE1 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		A9B83179275F6F8B00D17FD7 /* VillainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainTableViewCell.swift; sourceTree = "<group>"; };
 		A9E2DECD275CEDDE002722D5 /* AvengersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvengersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E2DED0275CEDDE002722D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E2DED2275CEDDE002722D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,22 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		A9B83177275F6D2F00D17FD7 /* DescriptionView */ = {
+			isa = PBXGroup;
+			children = (
+				A9B7CD78275E8E2100235FE1 /* DescriptionViewController.swift */,
+			);
+			path = DescriptionView;
+			sourceTree = "<group>";
+		};
+		A9B83178275F6D5500D17FD7 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				A9E2DED6275CEDDE002722D5 /* Main.storyboard */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		A9E2DEC4275CEDDE002722D5 = {
 			isa = PBXGroup;
 			children = (
@@ -89,11 +107,12 @@
 				A987FC5C275D3B3A006750A9 /* Models */,
 				A9E2DED0275CEDDE002722D5 /* AppDelegate.swift */,
 				A9E2DED2275CEDDE002722D5 /* SceneDelegate.swift */,
-				A9E2DED6275CEDDE002722D5 /* Main.storyboard */,
 				A9E2DEDB275CEDDF002722D5 /* LaunchScreen.storyboard */,
+				A9B83178275F6D5500D17FD7 /* MainView */,
 				A987FC62275D4626006750A9 /* HeroTableViewCell.swift */,
+				A9B83179275F6F8B00D17FD7 /* VillainTableViewCell.swift */,
 				A987FC64275D47D8006750A9 /* HeroesViewController.swift */,
-				A9B7CD78275E8E2100235FE1 /* DescriptionViewController.swift */,
+				A9B83177275F6D2F00D17FD7 /* DescriptionView */,
 			);
 			path = AvengersApp;
 			sourceTree = "<group>";
@@ -169,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B8317A275F6F8B00D17FD7 /* VillainTableViewCell.swift in Sources */,
 				A987FC67275E2431006750A9 /* VillainsRepository.swift in Sources */,
 				A987FC65275D47D8006750A9 /* HeroesViewController.swift in Sources */,
 				A9E2DED1275CEDDE002722D5 /* AppDelegate.swift in Sources */,

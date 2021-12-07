@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="206" id="Vn0-LR-y1j">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="206" id="Vn0-LR-y1j" customClass="VillainTableViewCell" customModule="AvengersApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vn0-LR-y1j" id="GET-kH-wHi">
@@ -49,6 +49,10 @@
                                                 <constraint firstItem="USg-T3-208" firstAttribute="leading" secondItem="GET-kH-wHi" secondAttribute="leadingMargin" constant="24" id="sDS-KY-FST"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="villainImage" destination="591-hk-uCv" id="CnJ-ao-Hcv"/>
+                                            <outlet property="villainName" destination="Y6T-Hp-i8U" id="jBy-Ni-Xo2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
