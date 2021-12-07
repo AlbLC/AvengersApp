@@ -83,14 +83,14 @@
 		A9E2DECF275CEDDE002722D5 /* AvengersApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9E2DEDE275CEDDF002722D5 /* Info.plist */,
+				A987FC5A275D31C7006750A9 /* Assets.xcassets */,
 				A987FC5F275D3FA5006750A9 /* Repositories */,
 				A987FC5C275D3B3A006750A9 /* Models */,
 				A9E2DED0275CEDDE002722D5 /* AppDelegate.swift */,
 				A9E2DED2275CEDDE002722D5 /* SceneDelegate.swift */,
 				A9E2DED6275CEDDE002722D5 /* Main.storyboard */,
 				A9E2DEDB275CEDDF002722D5 /* LaunchScreen.storyboard */,
-				A987FC5A275D31C7006750A9 /* Assets.xcassets */,
-				A9E2DEDE275CEDDF002722D5 /* Info.plist */,
 				A987FC62275D4626006750A9 /* HeroTableViewCell.swift */,
 				A987FC64275D47D8006750A9 /* HeroesViewController.swift */,
 				A9B7CD78275E8E2100235FE1 /* DescriptionViewController.swift */,
